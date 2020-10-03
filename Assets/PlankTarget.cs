@@ -19,6 +19,7 @@ public class PlankTarget : Interactable
         var player = GameObject.FindWithTag("Player");
         var carrying = player.GetComponent<Carrying>();
         carrying.itemType = null;
+        Destroy(carrying.itemGameObject);
 
         Destroy(this);
     }
