@@ -38,14 +38,6 @@ public class PlayerWeaponsManager : MonoBehaviour
     [Tooltip("Distance the weapon bobs when aiming")]
     public float aimingBobAmount = 0.02f;
 
-    [Header("Weapon Recoil")]
-    [Tooltip("This will affect how fast the recoil moves the weapon, the bigger the value, the fastest")]
-    public float recoilSharpness = 50f;
-    [Tooltip("Maximum distance the recoil can affect the weapon")]
-    public float maxRecoilDistance = 0.5f;
-    [Tooltip("How fast the weapon goes back to it's original position after the recoil is finished")]
-    public float recoilRestitutionSharpness = 10f;
-
     [Header("Misc")]
     [Tooltip("Speed at which the aiming animatoin is played")]
     public float aimingAnimationSpeed = 10f;
@@ -149,7 +141,6 @@ public class PlayerWeaponsManager : MonoBehaviour
     {
         UpdateWeaponAiming();
         UpdateWeaponBob();
-        UpdateWeaponRecoil();
         UpdateWeaponSwitching();
 
         // Set final weapon socket position based on all the combined animation influences
@@ -277,22 +268,6 @@ public class PlayerWeaponsManager : MonoBehaviour
             m_WeaponBobLocalPosition.y = Mathf.Abs(vBobValue);
 
             m_LastCharacterPosition = m_PlayerCharacterController.transform.position;
-        }
-    }
-
-    // Updates the weapon recoil animation
-    void UpdateWeaponRecoil()
-    {
-        // if the accumulated recoil is further away from the current position, make the current position move towards the recoil target
-        if (m_WeaponRecoilLocalPosition.z >= m_AccumulatedRecoil.z * 0.99f)
-        {
-            m_WeaponRecoilLocalPosition = Vector3.Lerp(m_WeaponRecoilLocalPosition, m_AccumulatedRecoil, recoilSharpness * Time.deltaTime);
-        }
-        // otherwise, move recoil position to make it recover towards its resting pose
-        else
-        {
-            m_WeaponRecoilLocalPosition = Vector3.Lerp(m_WeaponRecoilLocalPosition, Vector3.zero, recoilRestitutionSharpness * Time.deltaTime);
-            m_AccumulatedRecoil = m_WeaponRecoilLocalPosition;
         }
     }
 
