@@ -107,25 +107,6 @@ public class PlayerWeaponsManager : MonoBehaviour
         // shoot handling
         WeaponController activeWeapon = GetActiveWeapon();
 
-        if (activeWeapon && m_WeaponSwitchState == WeaponSwitchState.Up)
-        {
-            // handle aiming down sights
-            isAiming = m_InputHandler.GetAimInputHeld();
-
-            // handle shooting
-            bool hasFired = activeWeapon.HandleShootInputs(
-                m_InputHandler.GetFireInputDown(),
-                m_InputHandler.GetFireInputHeld(),
-                m_InputHandler.GetFireInputReleased());
-
-            // Handle accumulating recoil
-            if (hasFired)
-            {
-                m_AccumulatedRecoil += Vector3.back * activeWeapon.recoilForce;
-                m_AccumulatedRecoil = Vector3.ClampMagnitude(m_AccumulatedRecoil, maxRecoilDistance);
-            }
-        }
-
         // weapon switch handling
         if (!isAiming &&
             (activeWeapon == null || !activeWeapon.isCharging) &&
