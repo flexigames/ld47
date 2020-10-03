@@ -18,26 +18,23 @@ public class PlayerRaycasting : MonoBehaviour
 
         var hasHit = Physics.Raycast(this.transform.position, this.transform.forward, out whatIHit, distanceToInteract);
         
+        
         if (lastSeen && (!hasHit || (lastSeen != whatIHit.collider.gameObject)))
         {
-            Outline outlineOld = lastSeen.GetComponent(typeof(Outline)) as Outline;
-            if (outlineOld) outlineOld.OutlineWidth = 0;
+            lastSeen.GetComponent<Interactable>()?.DisableOutline();
         }
 
         if (hasHit)
         {
             var objectSeen = whatIHit.collider.gameObject;
 
-            Interactable interactionTarget = objectSeen.GetComponent(typeof(Interactable)) as Interactable;
+            var interactionTarget = objectSeen.GetComponent<Interactable>();
             if (!interactionTarget) return;
 
             lastSeen = objectSeen;
-
-            Outline outline = objectSeen.GetComponent(typeof(Outline)) as Outline;
-            if (outline)
-            {
-                outline.OutlineWidth = 7;
-            }
+            
+            interactionTarget.EnableOutline();
+            
             if (Input.GetKeyDown(KeyCode.E))
             {
                 interactionTarget.OnInteract();

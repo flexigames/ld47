@@ -8,4 +8,16 @@ public class Interactable : MonoBehaviour
     {
         Debug.Log("Interacted with a random Interactable!");
     }
+
+    public void EnableOutline()
+    {
+        var outline = GetComponent<Outline>();
+        if (outline) outline.OutlineWidth = 7;
+    }
+    
+    public void DisableOutline()
+    {
+        var outline = GetComponent<Outline>();
+        if (outline) outline.OutlineWidth = 0;
+    }
 }
