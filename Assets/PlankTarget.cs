@@ -15,6 +15,10 @@ public class PlankTarget : Interactable
         GetComponent<MeshRenderer>().material = finalMaterial;
         
         this.DisableOutline();
+        
+        var player = GameObject.FindWithTag("Player");
+        var carrying = player.GetComponent<Carrying>();
+        carrying.itemType = null;
 
         Destroy(this);
     }
@@ -23,8 +27,7 @@ public class PlankTarget : Interactable
     {
         var player = GameObject.FindWithTag("Player");
         if (!player) return false;
-        var weapon = player.GetComponent<PlayerWeaponsManager>().GetActiveWeapon();
-        if (!weapon) return false;
-        return (weapon.name.Contains("Plank"));
+        var carrying = player.GetComponent<Carrying>();
+        return carrying.itemType == "Plank";
     }
 }

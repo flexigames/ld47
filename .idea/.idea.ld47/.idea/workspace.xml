@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb6416d-c990-4a9a-bb68-59e54ef5b956" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlankTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlankTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerRaycasting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerRaycasting.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlankTarget.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PickupItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Carrying.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -47,6 +47,8 @@
         <option value="$PROJECT_DIR$/Assets/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerRaycasting.cs" />
         <option value="$PROJECT_DIR$/Assets/PlankTarget.cs" />
+        <option value="$PROJECT_DIR$/Assets/Carrying.cs" />
+        <option value="$PROJECT_DIR$/Assets/PickupItem.cs" />
       </list>
     </option>
   </component>
