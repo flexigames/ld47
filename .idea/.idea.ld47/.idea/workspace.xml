@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb6416d-c990-4a9a-bb68-59e54ef5b956" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ld47/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/ObjectiveKillEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/ObjectiveKillEnemies.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/PlayerWeaponsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/Pickup.cs" />
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/ObjectiveKillEnemies.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerRaycasting.cs" />
       </list>
     </option>
   </component>
@@ -64,7 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601658807151</updated>
       <workItem from="1601658818130" duration="169000" />
-      <workItem from="1601722991741" duration="4216000" />
+      <workItem from="1601722991741" duration="4370000" />
+      <workItem from="1601738799371" duration="293000" />
     </task>
     <servers />
   </component>
