@@ -52,12 +52,11 @@ public class Pickup : MonoBehaviour
     {
         PlayerCharacterController pickingPlayer = other.GetComponent<PlayerCharacterController>();
 
-        if (pickingPlayer != null)
+        if (pickingPlayer == null || onPick == null) return;
+
+        if (Input.GetKey(KeyCode.E))
         {
-            if (onPick != null)
-            {
-                onPick.Invoke(pickingPlayer);
-            }
+            onPick.Invoke(pickingPlayer);  
         }
     }
 

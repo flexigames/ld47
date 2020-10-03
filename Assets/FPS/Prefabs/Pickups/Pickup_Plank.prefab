@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   verticalBobFrequency: 1
   bobbingAmount: 0.3
-  rotatingSpeed: 360
+  rotatingSpeed: 100
   pickupSFX: {fileID: 8300000, guid: 7b83d61917ac1224f942a0609b1221f2, type: 3}
   pickupVFXPrefab: {fileID: 0}
 --- !u!114 &5391986374566301940
