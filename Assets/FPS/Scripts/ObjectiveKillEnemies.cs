@@ -29,7 +29,7 @@ public class ObjectiveKillEnemies : MonoBehaviour
 
         // set a title and description specific for this type of objective, if it hasn't one
         if (string.IsNullOrEmpty(m_Objective.title))
-            m_Objective.title = "Eliminate " + (mustKillAllEnemies ? "all the" : killsToCompleteObjective.ToString()) + " enemies";
+            m_Objective.title = "Help all ghosts";
 
         if (string.IsNullOrEmpty(m_Objective.description))
             m_Objective.description = GetUpdatedCounterAmount();

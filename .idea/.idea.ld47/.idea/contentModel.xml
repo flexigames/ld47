@@ -170,6 +170,7 @@
             <e p="EmojiOne_License.txt" t="Include" />
           </e>
         </e>
+        <e p="VertexColor.shader" t="Include" />
       </e>
       <e p="ld47.sln" t="IncludeFlat" />
       <e p="NavMeshComponents.csproj" t="IncludeRecursive" />

@@ -489,6 +489,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d6b739d8c492b8943a10708672155e08,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 964a909a2d7ccb040ac6fb94cfc23572, type: 2}
     - target: {fileID: 919132149155446097, guid: d6b739d8c492b8943a10708672155e08,
         type: 3}
       propertyPath: m_Name
@@ -863,7 +868,17 @@ PrefabInstance:
     - target: {fileID: 598277302063295018, guid: 012d63212fd1fe646b661cb8446c7bd4,
         type: 3}
       propertyPath: m_Name
-      value: ObjectiveKillEnemies
+      value: ObjectiveHelpGhosts
+      objectReference: {fileID: 0}
+    - target: {fileID: 598277302063295028, guid: 012d63212fd1fe646b661cb8446c7bd4,
+        type: 3}
+      propertyPath: description
+      value: Help all ghosts
+      objectReference: {fileID: 0}
+    - target: {fileID: 598277302063295028, guid: 012d63212fd1fe646b661cb8446c7bd4,
+        type: 3}
+      propertyPath: title
+      value: Help all ghosts
       objectReference: {fileID: 0}
     - target: {fileID: 598277302063295029, guid: 012d63212fd1fe646b661cb8446c7bd4,
         type: 3}
@@ -919,6 +934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 598277302063295030, guid: 012d63212fd1fe646b661cb8446c7bd4,
+        type: 3}
+      propertyPath: message
+      value: Please help all ghosts
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 012d63212fd1fe646b661cb8446c7bd4, type: 3}
