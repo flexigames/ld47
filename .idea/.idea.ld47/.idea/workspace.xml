@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb6416d-c990-4a9a-bb68-59e54ef5b956" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Pickups/Pickup_Blaster.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Pickups/Pickup_Blaster.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Weapons/Weapon_Wand.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Weapons/Weapon_Wand.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/PlayerWeaponsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/PlayerWeaponsManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +11,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/FPS/Scripts/PlayerWeaponsManager.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1iKab5xBTIQrV6GGCfWj7MzqJil" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601658807151</updated>
       <workItem from="1601658818130" duration="169000" />
-      <workItem from="1601722991741" duration="596000" />
+      <workItem from="1601722991741" duration="796000" />
     </task>
     <servers />
   </component>
