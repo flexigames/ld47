@@ -9,6 +9,11 @@ public class Interactable : MonoBehaviour
         Debug.Log("Interacted with a random Interactable!");
     }
 
+    public virtual bool isActive()
+    {
+        return true;
+    }
+
     public void EnableOutline()
     {
         var outline = GetComponent<Outline>();

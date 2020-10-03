@@ -29,7 +29,7 @@ public class PlayerRaycasting : MonoBehaviour
             var objectSeen = whatIHit.collider.gameObject;
 
             var interactionTarget = objectSeen.GetComponent<Interactable>();
-            if (!interactionTarget) return;
+            if (!interactionTarget || !interactionTarget.isActive()) return;
 
             lastSeen = objectSeen;
             

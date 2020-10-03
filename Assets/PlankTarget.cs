@@ -18,4 +18,13 @@ public class PlankTarget : Interactable
 
         Destroy(this);
     }
+    
+    public override bool isActive()
+    {
+        var player = GameObject.FindWithTag("Player");
+        if (!player) return false;
+        var weapon = player.GetComponent<PlayerWeaponsManager>().GetActiveWeapon();
+        if (!weapon) return false;
+        return (weapon.name.Contains("Plank"));
+    }
 }
