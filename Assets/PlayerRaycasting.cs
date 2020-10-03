@@ -6,6 +6,7 @@ public class PlayerRaycasting : MonoBehaviour
 {
     public float distanceToInteract;
     private RaycastHit whatIHit;
+    private GameObject lastSeen;
     void Start()
     {
         
@@ -16,11 +17,28 @@ public class PlayerRaycasting : MonoBehaviour
         Debug.DrawRay(this.transform.position, this.transform.forward * distanceToInteract, Color.magenta);
 
         var hasHit = Physics.Raycast(this.transform.position, this.transform.forward, out whatIHit, distanceToInteract);
-
-        if (hasHit && Input.GetKeyDown(KeyCode.E))
+        
+        if (lastSeen && (!hasHit || (lastSeen != whatIHit.collider.gameObject)))
         {
-            Debug.Log("I touched " + whatIHit.collider.gameObject.name);
-            Destroy(whatIHit.collider.gameObject);
+            Outline outlineOld = lastSeen.GetComponent(typeof(Outline)) as Outline;
+            if (outlineOld) outlineOld.OutlineWidth = 0;
+        }
+
+        if (hasHit)
+        {
+            var objectSeen = whatIHit.collider.gameObject;
+
+            lastSeen = objectSeen;
+
+            Outline outline = objectSeen.GetComponent(typeof(Outline)) as Outline;
+            if (outline)
+            {
+                outline.OutlineWidth = 7;
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Destroy(objectSeen);
+            }
         }
     }
 }
