@@ -1100,6 +1100,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1585368206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8936780813528627953, guid: 761cdc9e4e883334cbdcea062d0befa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2729281214152228920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1595935562 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3174469760558638133, guid: fd955ee4908ea4698bdf9e2f7d4010dc,
@@ -1690,6 +1696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 
+  socket: {fileID: 1585368206}
+  itemGameObject: {fileID: 0}
 --- !u!1001 &2729281214287269654
 PrefabInstance:
   m_ObjectHideFlags: 0
