@@ -28,6 +28,9 @@ public class PlayerRaycasting : MonoBehaviour
         {
             var objectSeen = whatIHit.collider.gameObject;
 
+            Interactable interactionTarget = objectSeen.GetComponent(typeof(Interactable)) as Interactable;
+            if (!interactionTarget) return;
+
             lastSeen = objectSeen;
 
             Outline outline = objectSeen.GetComponent(typeof(Outline)) as Outline;
@@ -37,7 +40,7 @@ public class PlayerRaycasting : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Destroy(objectSeen);
+                interactionTarget.OnInteract();
             }
         }
     }
