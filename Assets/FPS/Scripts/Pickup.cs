@@ -48,7 +48,7 @@ public class Pickup : MonoBehaviour
         transform.Rotate(Vector3.up, rotatingSpeed * Time.deltaTime, Space.Self);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         PlayerCharacterController pickingPlayer = other.GetComponent<PlayerCharacterController>();
 
