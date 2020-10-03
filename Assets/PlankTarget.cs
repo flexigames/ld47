@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net.Configuration;
 using UnityEngine;
 
 public class PlankTarget : Interactable
 {
     [SerializeField] public Material finalMaterial;
+    [SerializeField] public bool resolved = false;
     
     public override void OnInteract()
     {
@@ -20,6 +22,8 @@ public class PlankTarget : Interactable
         var carrying = player.GetComponent<Carrying>();
         carrying.itemType = null;
         Destroy(carrying.itemGameObject);
+
+        resolved = true;
 
         Destroy(this);
     }
