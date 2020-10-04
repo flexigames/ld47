@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChopTarget : Interactable
+public class ChopTarget : Target
 {
     public override void OnInteract()
     {
+        this.DisableOutline();
+
         var animator = GetComponent<Animator>();
         animator.enabled = true;
         
@@ -13,6 +15,8 @@ public class ChopTarget : Interactable
         var carrying = player.GetComponent<Carrying>();
         carrying.itemType = null;
         Destroy(carrying.itemGameObject);
+
+        resolved = true;
         
         Destroy(this);
     }

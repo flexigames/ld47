@@ -7,7 +7,7 @@ using UnityEngine;
 public class Ghost : MonoBehaviour
 {
 
-    public List<PlankTarget> conditions;
+    public List<Target> conditions;
     public PathCreator sadPath;
     public PathCreator happyPath;
     private bool madeHappy = false;

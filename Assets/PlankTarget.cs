@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Net.Configuration;
 using UnityEngine;
 
-public class PlankTarget : Interactable
+public class PlankTarget : Target
 {
     [SerializeField] public Material finalMaterial;
-    [SerializeField] public bool resolved = false;
-    
+
     public override void OnInteract()
     {
         Debug.Log("Interacted with the plank!");
