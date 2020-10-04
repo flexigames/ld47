@@ -12,11 +12,6 @@ public class PickupItem : Interactable
         var player = GameObject.FindWithTag("Player");
         if (!player) return;
         var carrying = player.GetComponent<Carrying>();
-        carrying.itemType = itemType;
-        gameObject.transform.parent = carrying.socket;
-        gameObject.transform.localPosition = Vector3.zero;
-        gameObject.transform.localRotation = Quaternion.identity;
-        gameObject.layer = 10;
-        carrying.itemGameObject = gameObject;
+        carrying.Pickup(gameObject, itemType);
     }
 }
