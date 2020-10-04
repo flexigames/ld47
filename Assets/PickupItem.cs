@@ -16,6 +16,7 @@ public class PickupItem : Interactable
         gameObject.transform.parent = carrying.socket;
         gameObject.transform.localPosition = Vector3.zero;
         gameObject.transform.localRotation = Quaternion.identity;
+        gameObject.layer = 10;
         carrying.itemGameObject = gameObject;
     }
 }
