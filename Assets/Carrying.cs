@@ -20,6 +20,8 @@ public class Carrying : MonoBehaviour
         itemType = "";
         socket.DetachChildren();
 
+        setLayer(itemGameObject, 0);
+
         var collider = itemGameObject.GetComponent<Collider>();
         collider.enabled = true;
         
@@ -37,20 +39,26 @@ public class Carrying : MonoBehaviour
         item.transform.parent = socket;
         item.transform.localPosition = Vector3.zero;
         item.transform.localRotation = Quaternion.identity;
-        item.layer = layerIndex;
-        foreach (Transform t in gameObject.GetComponentsInChildren<Transform>(true))
-        {
-            t.gameObject.layer = layerIndex;
-        }
+        setLayer(item, layerIndex);
         
         itemGameObject = item;
 
         freezeDrop = true;
     }
 
+    private static void setLayer(GameObject go, int layerIndex)
+    {
+        go.layer = layerIndex;
+        foreach (Transform t in go.GetComponentsInChildren<Transform>(true))
+        {
+            t.gameObject.layer = layerIndex;
+        }
+
+    }
+
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !freezeDrop) Drop();
+        if (Input.GetKeyDown(KeyCode.X) && !freezeDrop) Drop();
         freezeDrop = false;
     }
 }
