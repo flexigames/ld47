@@ -4203,6 +4203,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectiveHelpGhosts
       objectReference: {fileID: 0}
+    - target: {fileID: 598277302063295019, guid: 012d63212fd1fe646b661cb8446c7bd4,
+        type: 3}
+      propertyPath: ghosts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 598277302063295019, guid: 012d63212fd1fe646b661cb8446c7bd4,
+        type: 3}
+      propertyPath: ghosts.Array.data[0]
+      value:
+      objectReference: {fileID: 403231215}
+    - target: {fileID: 598277302063295019, guid: 012d63212fd1fe646b661cb8446c7bd4,
+        type: 3}
+      propertyPath: ghosts.Array.data[1]
+      value:
+      objectReference: {fileID: 2075601508}
+    - target: {fileID: 598277302063295019, guid: 012d63212fd1fe646b661cb8446c7bd4,
+        type: 3}
+      propertyPath: ghosts.Array.data[2]
+      value:
+      objectReference: {fileID: 5704905}
     - target: {fileID: 598277302063295028, guid: 012d63212fd1fe646b661cb8446c7bd4,
         type: 3}
       propertyPath: description

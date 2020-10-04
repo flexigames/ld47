@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using PathCreation;
 using PathCreation.Examples;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Ghost : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Ghost : MonoBehaviour
     public PathCreator sadPath;
     public PathCreator happyPath;
     private bool madeHappy = false;
+
+    public UnityAction onHappy;
     
     void Update()
     {
@@ -27,6 +30,8 @@ public class Ghost : MonoBehaviour
         if (!madeHappy && pathFollower.distanceTravelled % sadPath.path.length < 0.5f)
         {
             madeHappy = true;
+
+            onHappy?.Invoke();
    
             pathFollower.pathCreator = happyPath;
             pathFollower.endOfPathInstruction = EndOfPathInstruction.Stop;
