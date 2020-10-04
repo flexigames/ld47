@@ -17,6 +17,14 @@ public class Carrying : MonoBehaviour
     public void Drop()
     {
         if (!itemGameObject) return;
+
+        RaycastHit whatIHit;
+        var hasHit = Physics.Raycast(itemGameObject.transform.position, -transform.up, out whatIHit);
+        if (hasHit)
+        {
+            itemGameObject.transform.position = whatIHit.point;
+        }
+        
         itemType = "";
         socket.DetachChildren();
 
