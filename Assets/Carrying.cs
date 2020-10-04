@@ -10,14 +10,19 @@ public class Carrying : MonoBehaviour
     public Transform socket;
     public GameObject itemGameObject;
 
-    private bool freezeDrop = false; 
+    private bool freezeDrop = false;
+
+    private int layerIndex = 10;
 
     public void Drop()
     {
         if (!itemGameObject) return;
         itemType = "";
         socket.DetachChildren();
-        itemGameObject.transform.position = transform.position;
+
+        var collider = itemGameObject.GetComponent<Collider>();
+        collider.enabled = true;
+        
         itemGameObject = null;
     }
 
@@ -25,13 +30,20 @@ public class Carrying : MonoBehaviour
     {
         Drop();
         itemType = type;
-        
+
+        var collider = item.GetComponent<Collider>();
+        collider.enabled = false;
+
         item.transform.parent = socket;
         item.transform.localPosition = Vector3.zero;
         item.transform.localRotation = Quaternion.identity;
-        item.layer = 10;
+        item.layer = layerIndex;
+        foreach (Transform t in gameObject.GetComponentsInChildren<Transform>(true))
+        {
+            t.gameObject.layer = layerIndex;
+        }
         
-        itemGameObject = gameObject;
+        itemGameObject = item;
 
         freezeDrop = true;
     }
