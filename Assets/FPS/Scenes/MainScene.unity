@@ -421,12 +421,12 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -2, y: 0, z: 0}
-      - {x: -1, y: 0, z: 0.5}
-      - {x: 1, y: 0, z: -0.5}
-      - {x: 2, y: 0, z: 0}
-      - {x: 3.7888544, y: 0, z: 0.8944272}
-      - {x: -3.7888544, y: 0, z: -0.8944272}
+      - {x: 2.1276608, y: 0, z: -0.749469}
+      - {x: 2.6460843, y: 0.06200695, z: 0.15747434}
+      - {x: -1.6081084, y: -0.09294915, z: -0.6972456}
+      - {x: -2.325156, y: 0, z: 0.7932631}
+      - {x: -3.6873305, y: 0.1765753, z: 3.624781}
+      - {x: 1.1446338, y: -0.1175766, z: -2.469201}
       isClosed: 1
       space: 0
       controlMode: 0
@@ -1170,13 +1170,13 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -2, y: 0, z: 0}
-      - {x: -1.0108294, y: 0, z: 0.49458525}
-      - {x: 1.3886592, y: -0.3879456, z: -0.680122}
-      - {x: 2.3990223, y: -0.3879456, z: -0.21732542}
-      - {x: 2.4100838, y: -0.3879456, z: -0.2122587}
-      - {x: 11.302371, y: -0.26344994, z: 4.4480524}
-      - {x: 9.409023, y: 0.3869459, z: 3.6808639}
+      - {x: -2.0683525, y: 0, z: -0.8007797}
+      - {x: -1.6520133, y: 0.014586687, z: 0.24825665}
+      - {x: 2.2620962, y: -0.11255501, z: 0.5469761}
+      - {x: 3.2724593, y: -0.11255501, z: 1.0097727}
+      - {x: 3.2835205, y: -0.11255501, z: 1.0148394}
+      - {x: 10.582616, y: -0.70526975, z: 4.1963916}
+      - {x: 9.553412, y: 0, z: 3.5524106}
       isClosed: 0
       space: 0
       controlMode: 0
@@ -1191,7 +1191,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -1947,7 +1947,7 @@ PrefabInstance:
     - target: {fileID: 8746678193447392789, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28.5
+      value: -31.85
       objectReference: {fileID: 0}
     - target: {fileID: 8746678193447392789, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
@@ -1957,7 +1957,7 @@ PrefabInstance:
     - target: {fileID: 8746678193447392789, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.25
+      value: -8.08
       objectReference: {fileID: 0}
     - target: {fileID: 8746678193447392789, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
