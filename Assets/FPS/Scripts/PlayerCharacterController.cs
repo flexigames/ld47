@@ -153,7 +153,7 @@ public class PlayerCharacterController : MonoBehaviour
             m_Health.Kill();
         }
 
-        hasJumpedThisFrame = false;
+        hasJumpedThisFrame = true;
 
         bool wasGrounded = isGrounded;
         GroundCheck();
@@ -278,31 +278,6 @@ public class PlayerCharacterController : MonoBehaviour
 
                 // smoothly interpolate between our current velocity and the target velocity based on acceleration speed
                 characterVelocity = Vector3.Lerp(characterVelocity, targetVelocity, movementSharpnessOnGround * Time.deltaTime);
-
-                // jumping
-                if (isGrounded && m_InputHandler.GetJumpInputDown())
-                {
-                    // force the crouch state to false
-                    if (SetCrouchingState(false, false))
-                    {
-                        // start by canceling out the vertical component of our velocity
-                        characterVelocity = new Vector3(characterVelocity.x, 0f, characterVelocity.z);
-
-                        // then, add the jumpSpeed value upwards
-                        characterVelocity += Vector3.up * jumpForce;
-
-                        // play sound
-                        audioSource.PlayOneShot(jumpSFX);
-
-                        // remember last time we jumped because we need to prevent snapping to ground for a short time
-                        m_LastTimeJumped = Time.time;
-                        hasJumpedThisFrame = true;
-
-                        // Force grounding to false
-                        isGrounded = false;
-                        m_GroundNormal = Vector3.up;
-                    }
-                }
 
                 // footsteps sound
                 float chosenFootstepSFXFrequency = (isSprinting ? footstepSFXFrequencyWhileSprinting : footstepSFXFrequency);
