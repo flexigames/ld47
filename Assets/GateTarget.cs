@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class GateTarget : Target
 {
+    public string RequiredItem = "Key";
+    public bool deleteCarrying = true;
+
     public override void OnInteract()
     {
         this.DisableOutline();
         
         var player = GameObject.FindWithTag("Player");
         var carrying = player.GetComponent<Carrying>();
-        carrying.itemType = null;
-        Destroy(carrying.itemGameObject);
+        if (deleteCarrying)
+        {
+            carrying.itemType = null;
+            Destroy(carrying.itemGameObject);
+        }
 
         resolved = true;
         
@@ -24,6 +30,6 @@ public class GateTarget : Target
         var player = GameObject.FindWithTag("Player");
         if (!player) return false;
         var carrying = player.GetComponent<Carrying>();
-        return carrying.itemType == "Key";
+        return carrying.itemType == RequiredItem;
     }
 }
