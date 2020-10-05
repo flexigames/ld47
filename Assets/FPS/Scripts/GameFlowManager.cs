@@ -23,7 +23,7 @@ public class GameFlowManager : MonoBehaviour
 
     [Header("Lose")]
     [Tooltip("This string has to be the name of the scene you want to load when losing")]
-    public string loseSceneName = "LoseScene";
+    public string loseSceneName = "MenuScene";
 
 
     public bool gameIsEnding { get; private set; }
