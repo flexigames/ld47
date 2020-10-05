@@ -234,7 +234,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c378daac2e96c4082a83fc08bab96d33,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c378daac2e96c4082a83fc08bab96d33,
         type: 3}
@@ -386,7 +386,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: -38.344, y: 335.019, z: -418.121}
 --- !u!4 &29097349 stripped
 Transform:
@@ -1854,7 +1854,7 @@ GameObject:
   - component: {fileID: 337036487}
   - component: {fileID: 337036486}
   m_Layer: 0
-  m_Name: GhostPathSad
+  m_Name: BridgeGhostPathSad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1876,11 +1876,11 @@ MonoBehaviour:
     _bezierPath:
       points:
       - {x: 2.1276608, y: 0, z: -0.749469}
-      - {x: 2.6460843, y: 0.06200695, z: 0.15747434}
-      - {x: -1.6081084, y: -0.09294915, z: -0.6972456}
-      - {x: -2.325156, y: 0, z: 0.7932631}
-      - {x: -3.6873305, y: 0.1765753, z: 3.624781}
-      - {x: 1.1446338, y: -0.1175766, z: -2.469201}
+      - {x: 4.218879, y: 0.062006943, z: 3.8449833}
+      - {x: -11.474552, y: -0.049645092, z: -5.871669}
+      - {x: -5.9943104, y: 0, z: 4.2277746}
+      - {x: -3.185061, y: 0.025448795, z: 9.404899}
+      - {x: 1.3056784, y: -0.024372686, z: -2.555382}
       isClosed: 1
       space: 0
       controlMode: 0
@@ -1894,7 +1894,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -1927,7 +1927,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 105.368, z: 0}
 --- !u!1001 &351413773
 PrefabInstance:
@@ -2079,7 +2079,7 @@ GameObject:
   - component: {fileID: 403231214}
   - component: {fileID: 403231215}
   m_Layer: 0
-  m_Name: Ghost
+  m_Name: BridgeGhost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3473,7 +3473,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 71446957934f7b340aa780bddef68a43,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 71446957934f7b340aa780bddef68a43,
         type: 3}
@@ -4150,7 +4150,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &868225861
 PrefabInstance:
@@ -5993,7 +5993,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: -80.58, y: 259.729, z: -314.374}
 --- !u!1001 &1222655504
 PrefabInstance:
@@ -6124,7 +6124,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 4278208f74eda4abc979b7aa0a4693df,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4278208f74eda4abc979b7aa0a4693df,
         type: 3}
@@ -6284,7 +6284,7 @@ GameObject:
   - component: {fileID: 1261055806}
   - component: {fileID: 1261055805}
   m_Layer: 0
-  m_Name: GhostPathHappy
+  m_Name: BridgeGhostPathHappy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6307,23 +6307,11 @@ MonoBehaviour:
       points:
       - {x: -2.0683525, y: 0, z: -0.8007797}
       - {x: -1.6520133, y: 0.014586687, z: 0.24825665}
-      - {x: 2.2620964, y: -0.11255501, z: 0.546976}
-      - {x: 3.2724593, y: -0.11255501, z: 1.0097727}
-      - {x: 3.2741416, y: -0.11255501, z: 1.0105432}
-      - {x: 7.7747188, y: -0.0011410117, z: 2.3903325}
-      - {x: 9.372197, y: 0.6048972, z: 2.880223}
-      - {x: 11.678972, y: 1.4800225, z: 3.58763}
-      - {x: 14.446303, y: 3.6312814, z: 4.435902}
-      - {x: 18.246387, y: 5.2553477, z: 5.5940948}
-      - {x: 23.317873, y: 7.4227815, z: 7.1397862}
-      - {x: 25.134422, y: 8.888968, z: 7.7048187}
-      - {x: 29.895397, y: 10.859279, z: 9.125518}
-      - {x: 33.38745, y: 12.304451, z: 10.167564}
-      - {x: 35.633022, y: 14.1783285, z: 10.848994}
-      - {x: 38.365154, y: 15.202736, z: 11.625102}
-      - {x: 39.89315, y: 15.775654, z: 12.0591545}
-      - {x: 43.165092, y: 15.89486, z: 12.981022}
-      - {x: 43.04133, y: 15.979654, z: 12.903589}
+      - {x: 2.0803077, y: -0.92238367, z: 1.208422}
+      - {x: 3.0906706, y: -0.92238367, z: 1.6712186}
+      - {x: 3.0923529, y: -0.92238367, z: 1.6719892}
+      - {x: 25.21479, y: 0.91520584, z: 12.822569}
+      - {x: 25.091026, y: 0.9999999, z: 12.745136}
       isClosed: 0
       space: 0
       controlMode: 0
@@ -6333,10 +6321,6 @@ MonoBehaviour:
         m_Center: {x: 0, y: 0, z: 0}
         m_Extent: {x: 2, y: 0.14433756, z: 0}
       perAnchorNormalsAngle:
-      - 0
-      - 0
-      - 0
-      - 0
       - 0
       - 0
       - 0
@@ -6375,7 +6359,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 105.368, z: 0}
 --- !u!1 &1278090064 stripped
 GameObject:
@@ -9018,7 +9002,7 @@ Transform:
   m_Children:
   - {fileID: 974559223}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: -85.198, y: 141.894, z: -133.522}
 --- !u!114 &1742504483
 MonoBehaviour:
@@ -10162,7 +10146,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d776a9084a54c4dc281ba8def5837c8c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d776a9084a54c4dc281ba8def5837c8c,
         type: 3}
