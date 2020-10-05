@@ -5,6 +5,7 @@ public class GameFlowManager : MonoBehaviour
 {
 
     public Camera endCamera;
+    public AudioSource endMusic;
 
     [Header("Parameters")]
     [Tooltip("Duration of the fade-to-black at the end of the game")]
@@ -91,6 +92,8 @@ public class GameFlowManager : MonoBehaviour
 
             // change camera
             endCamera.enabled = true;
+            
+            endMusic.Play();
 
             // create a game message
             var message = Instantiate(WinGameMessagePrefab).GetComponent<DisplayMessage>();
