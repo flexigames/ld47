@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 1207483586}
   endOfPathInstruction: 0
-  speed: 2
+  speed: 4
   distanceTravelled: 0
 --- !u!4 &5704907
 Transform:
@@ -3838,9 +3838,9 @@ MonoBehaviour:
     _bezierPath:
       points:
       - {x: 0, y: 1, z: 0}
-      - {x: 1, y: 1.0875838, z: 2.1983643}
-      - {x: -32.036396, y: 14.102386, z: -16.529263}
-      - {x: -31.036396, y: 14.602386, z: -16.529263}
+      - {x: 1, y: 1, z: 7.1381493}
+      - {x: -24.821821, y: 0.5, z: -6.606106}
+      - {x: -23.821821, y: 1, z: -6.606106}
       isClosed: 0
       space: 0
       controlMode: 0
@@ -3883,7 +3883,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848630643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4499998, y: -3.66, z: -37.55}
+  m_LocalPosition: {x: -1.55, y: -3.66, z: -37.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5684,9 +5684,9 @@ MonoBehaviour:
       points:
       - {x: 0, y: 1, z: 0}
       - {x: -0.0612278, y: 1.2456167, z: 2.1119232}
-      - {x: 11.06225, y: 0.8904598, z: 18.97875}
-      - {x: 12.979196, y: 1, z: 7.284563}
-      - {x: 14.113971, y: 1.0648446, z: 0.36195135}
+      - {x: 8.319119, y: 0.8904598, z: 17.819693}
+      - {x: 10.236065, y: 1, z: 6.1255054}
+      - {x: 11.37084, y: 1.0648446, z: -0.79710627}
       - {x: 0.13636576, y: 0.45296568, z: -4.703648}
       isClosed: 1
       space: 0
@@ -5701,7 +5701,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -5730,7 +5730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207483585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4499998, y: -3.66, z: -37.55}
+  m_LocalPosition: {x: -1.55, y: -3.66, z: -37.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9651,7 +9651,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bd3e25cc775a4a8eaff4e32f5722cd7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.9099998
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bd3e25cc775a4a8eaff4e32f5722cd7,
         type: 3}
@@ -9661,7 +9661,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bd3e25cc775a4a8eaff4e32f5722cd7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.34000015
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bd3e25cc775a4a8eaff4e32f5722cd7,
         type: 3}
