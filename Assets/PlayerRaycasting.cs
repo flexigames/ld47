@@ -35,7 +35,7 @@ public class PlayerRaycasting : MonoBehaviour
             
             interactionTarget.EnableOutline();
             
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
             {
                 interactionTarget.OnInteract();
             }
