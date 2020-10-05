@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class GameFlowManager : MonoBehaviour
 {
+
+    public Camera endCamera;
+
     [Header("Parameters")]
     [Tooltip("Duration of the fade-to-black at the end of the game")]
     public float endSceneLoadDelay = 3f;
@@ -86,12 +89,8 @@ public class GameFlowManager : MonoBehaviour
             m_SceneToLoad = winSceneName;
             m_TimeLoadEndGameScene = Time.time + endSceneLoadDelay + delayBeforeFadeToBlack;
 
-            // play a sound on win
-            var audioSource = gameObject.AddComponent<AudioSource>();
-            audioSource.clip = victorySound;
-            audioSource.playOnAwake = false;
-            audioSource.outputAudioMixerGroup = AudioUtility.GetAudioGroup(AudioUtility.AudioGroups.HUDVictory);
-            audioSource.PlayScheduled(AudioSettings.dspTime + delayBeforeWinMessage);
+            // change camera
+            endCamera.enabled = true;
 
             // create a game message
             var message = Instantiate(WinGameMessagePrefab).GetComponent<DisplayMessage>();
