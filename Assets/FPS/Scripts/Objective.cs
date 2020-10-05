@@ -27,10 +27,6 @@ public class Objective : MonoBehaviour
         DebugUtility.HandleErrorIfNullFindObject<ObjectiveManager, Objective>(objectiveManager, this);
         objectiveManager.RegisterObjective(this);
 
-        // register this objective in the ObjectiveHUDManger
-        m_ObjectiveHUDManger = FindObjectOfType<ObjectiveHUDManger>();
-        DebugUtility.HandleErrorIfNullFindObject<ObjectiveHUDManger, Objective>(m_ObjectiveHUDManger, this);
-        m_ObjectiveHUDManger.RegisterObjective(this);
 
         // register this objective in the NotificationHUDManager
         m_NotificationHUDManager = FindObjectOfType<NotificationHUDManager>();
@@ -40,16 +36,16 @@ public class Objective : MonoBehaviour
 
     public void UpdateObjective(string descriptionText, string counterText, string notificationText)
     {
-        onUpdateObjective.Invoke(new UnityActionUpdateObjective(this, descriptionText, counterText, false, notificationText));
+        onUpdateObjective?.Invoke(new UnityActionUpdateObjective(this, descriptionText, counterText, false, notificationText));
     }
 
     public void CompleteObjective(string descriptionText, string counterText, string notificationText)
     {
         isCompleted = true;
-        onUpdateObjective.Invoke(new UnityActionUpdateObjective(this, descriptionText, counterText, true, notificationText));
+        onUpdateObjective?.Invoke(new UnityActionUpdateObjective(this, descriptionText, counterText, true, notificationText));
 
         // unregister this objective form both HUD managers
-        m_ObjectiveHUDManger.UnregisterObjective(this);
+        //m_ObjectiveHUDManger.UnregisterObjective(this);
         m_NotificationHUDManager.UnregisterObjective(this);
     }
 }
