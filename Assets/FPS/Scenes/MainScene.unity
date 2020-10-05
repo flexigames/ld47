@@ -1510,6 +1510,36 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &202519103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 202519104}
+  m_Layer: 0
+  m_Name: CarryTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &202519104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202519103}
+  m_LocalRotation: {x: 0.096046336, y: 0.28961402, z: -0.28961393, w: 0.90720594}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1200261444}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 20, y: 30, z: -30}
 --- !u!1001 &228192134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5772,7 +5802,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Axe
-  carryTransform: {fileID: 0}
+  carryTransform: {fileID: 202519104}
+--- !u!4 &1200261444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c378daac2e96c4082a83fc08bab96d33,
+    type: 3}
+  m_PrefabInstance: {fileID: 15291199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1207178891
 PrefabInstance:
   m_ObjectHideFlags: 0
