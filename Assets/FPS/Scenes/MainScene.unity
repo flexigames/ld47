@@ -158,6 +158,9 @@ MonoBehaviour:
   - {fileID: 1438333293}
   sadPath: {fileID: 1207483586}
   happyPath: {fileID: 848630644}
+  happyMaterial: {fileID: 8430517353582324936, guid: b34af0026facf4e2bb042d94ceea932a,
+    type: 3}
+  renderer: {fileID: 859439812}
 --- !u!114 &5704906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1932,7 +1935,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -2172,6 +2175,9 @@ MonoBehaviour:
   - {fileID: 1595935568}
   sadPath: {fileID: 337036486}
   happyPath: {fileID: 1261055805}
+  happyMaterial: {fileID: 8430517353582324936, guid: b34af0026facf4e2bb042d94ceea932a,
+    type: 3}
+  renderer: {fileID: 1703874398}
 --- !u!1 &404606425 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a14f010f3eb945728cc146e5bb134ca,
@@ -4141,6 +4147,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d776a9084a54c4dc281ba8def5837c8c,
     type: 3}
   m_PrefabInstance: {fileID: 1913788150}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &859439812 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2345421093191269280, guid: c48c389143ff24472a7ef9871a795993,
+    type: 3}
+  m_PrefabInstance: {fileID: 2056191116}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &865231055
 GameObject:
@@ -8519,6 +8531,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7489502594997747002, guid: f9cc12a8085d543c8914c3cd2ba659f5, type: 3}
+--- !u!23 &1697558819 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2345421093191269280, guid: c48c389143ff24472a7ef9871a795993,
+    type: 3}
+  m_PrefabInstance: {fileID: 88544063}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1698514399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8637,6 +8655,12 @@ Transform:
   m_Father: {fileID: 857062067}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 90}
+--- !u!23 &1703874398 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2345421093191269280, guid: c48c389143ff24472a7ef9871a795993,
+    type: 3}
+  m_PrefabInstance: {fileID: 3984851892730884851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1705346333 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af6e064e8e0f843b495a8973ae4b9679,
@@ -10633,6 +10657,9 @@ MonoBehaviour:
   - {fileID: 1053423987}
   sadPath: {fileID: 1375974608}
   happyPath: {fileID: 830301800}
+  happyMaterial: {fileID: 8430517353582324936, guid: b34af0026facf4e2bb042d94ceea932a,
+    type: 3}
+  renderer: {fileID: 1697558819}
 --- !u!114 &2075601509
 MonoBehaviour:
   m_ObjectHideFlags: 0

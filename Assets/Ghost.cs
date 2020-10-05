@@ -12,6 +12,8 @@ public class Ghost : MonoBehaviour
     public PathCreator sadPath;
     public PathCreator happyPath;
     private bool madeHappy = false;
+    public Material happyMaterial;
+    public MeshRenderer renderer;
 
     public UnityAction onHappy;
     
@@ -32,6 +34,8 @@ public class Ghost : MonoBehaviour
             madeHappy = true;
 
             onHappy?.Invoke();
+
+            if (happyMaterial) renderer.material = happyMaterial;
    
             pathFollower.pathCreator = happyPath;
             pathFollower.endOfPathInstruction = EndOfPathInstruction.Stop;
