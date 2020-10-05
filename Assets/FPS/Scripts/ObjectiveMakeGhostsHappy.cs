@@ -6,6 +6,7 @@ public class ObjectiveMakeGhostsHappy : MonoBehaviour
 {
     public List<Ghost> ghosts;
     private int targetRemaining;
+    public AudioSource successSound;
 
     Objective m_Objective;
 
@@ -30,8 +31,11 @@ public class ObjectiveMakeGhostsHappy : MonoBehaviour
     void OnGhostHappy()
     {
         if (m_Objective.isCompleted) return;
-
+        
         targetRemaining -= 1;
+        
+        if (targetRemaining >= 1) successSound.Play();
+        
 
         if (targetRemaining == 0)
         {
