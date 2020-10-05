@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 16960269}
   - component: {fileID: 16960268}
   m_Layer: 0
-  m_Name: Plank 6 (2)
+  m_Name: PlankItem3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Plank
+  carryTransform: {fileID: 0}
 --- !u!114 &16960269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1623,6 +1624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Key
+  carryTransform: {fileID: 0}
 --- !u!114 &857062063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2064,6 +2066,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Axe
+  carryTransform: {fileID: 2098336556}
+--- !u!4 &1200261444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c378daac2e96c4082a83fc08bab96d33,
+    type: 3}
+  m_PrefabInstance: {fileID: 15291199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1207483585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,7 +2174,7 @@ GameObject:
   - component: {fileID: 1209030982}
   - component: {fileID: 1209030981}
   m_Layer: 0
-  m_Name: Plank 6 (1)
+  m_Name: PlankItem2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2184,6 +2193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Plank
+  carryTransform: {fileID: 0}
 --- !u!114 &1209030982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2793,7 +2803,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 70ac723923add4054bb99efeaa863ee4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 70ac723923add4054bb99efeaa863ee4,
         type: 3}
@@ -3267,7 +3277,7 @@ GameObject:
   - component: {fileID: 1742504483}
   - component: {fileID: 1742504478}
   m_Layer: 0
-  m_Name: Plank 6
+  m_Name: PlankItem1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3286,6 +3296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Plank
+  carryTransform: {fileID: 0}
 --- !u!64 &1742504479
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3361,7 +3372,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -85.198, y: 141.894, z: -133.522}
 --- !u!114 &1742504483
 MonoBehaviour:
@@ -3858,6 +3869,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71446957934f7b340aa780bddef68a43, type: 3}
+--- !u!1 &2098336555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2098336556}
+  m_Layer: 0
+  m_Name: CarryTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2098336556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098336555}
+  m_LocalRotation: {x: 0.10614856, y: 0.21986292, z: -0.33919278, w: 0.90848285}
+  m_LocalPosition: {x: 0.8110008, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1200261444}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 20, y: 20.395, z: -37.314}
 --- !u!1 &2107148489 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6194439262484840608, guid: fd955ee4908ea4698bdf9e2f7d4010dc,

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Net.Configuration;
 using UnityEngine;
 
 public class Carrying : MonoBehaviour
@@ -26,6 +25,8 @@ public class Carrying : MonoBehaviour
         }
         
         itemType = "";
+        itemGameObject.transform.localPosition = Vector3.zero;
+        itemGameObject.transform.localRotation = Quaternion.identity;
         socket.DetachChildren();
 
         setLayer(itemGameObject, 0);
@@ -45,8 +46,6 @@ public class Carrying : MonoBehaviour
         collider.enabled = false;
 
         item.transform.parent = socket;
-        item.transform.localPosition = Vector3.zero;
-        item.transform.localRotation = Quaternion.identity;
         setLayer(item, layerIndex);
         
         itemGameObject = item;

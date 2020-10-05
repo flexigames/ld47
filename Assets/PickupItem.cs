@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickupItem : Interactable
 {
     public string itemType;
+    public Transform carryTransform;
 
     public override void OnInteract()
     {
@@ -13,5 +14,15 @@ public class PickupItem : Interactable
         if (!player) return;
         var carrying = player.GetComponent<Carrying>();
         carrying.Pickup(gameObject, itemType);
+        if (carryTransform)
+        {
+            gameObject.transform.localPosition = carryTransform.localPosition;
+            gameObject.transform.localRotation = carryTransform.localRotation;
+        }
+        else
+        {
+            gameObject.transform.localPosition = Vector3.zero;
+            gameObject.transform.localRotation = Quaternion.identity;
+        }
     }
 }
